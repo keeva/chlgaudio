@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "ChallengeAudio",
+  "description": "This extension auto pronounce the word when play the challenge using Vocabulary.com",
+  "icons": {
+    "128": "icon128.png",
+    "64": "icon64.png",
+    "32":"icon32.png"
+  },
+  "content_scripts":  [{
+    "matches": ["https://www.vocabulary.com/"],
+    "js": ["jquery.js", "content.js"],
+    "all_frames": true
+  }],
+  "permissions": [
+    "https://www.vocabulary.com/"
+  ]
+}
