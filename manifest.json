@@ -9,11 +9,11 @@
     "32":"icon32.png"
   },
   "content_scripts":  [{
-    "matches": ["https://www.vocabulary.com/"],
+    "matches": ["https://www.vocabulary.com/*"],
     "js": ["jquery.js", "content.js"],
     "all_frames": true
   }],
   "permissions": [
-    "https://www.vocabulary.com/"
+    "https://www.vocabulary.com/*"
   ]
 }
